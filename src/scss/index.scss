@@ -1,0 +1,31 @@
+@import '../../node_modules/bulma/sass/utilities/_all.sass';
+@import '../../node_modules/bulma/sass/base/_all.sass';
+@import '../../node_modules/bulma/sass/elements/_all.sass';
+@import '../../node_modules/bulma/sass/components/_all.sass';
+@import '../../node_modules/bulma/sass/grid/_all.sass';
+@import '../../node_modules/bulma/sass/layout/_all.sass';
+
+.ss-email {
+  > .icon {
+    vertical-align: middle;
+  }
+  > a {
+    vertical-align: middle;
+    color: #4a4a4a;
+    text-decoration: underline;
+  }
+}
+.ss-contact > a {
+  display: inline-block;
+  margin-right: 0.25em;
+  margin-left: 0.25em;
+  color: #4a4a4a;
+}
+.ss-list-with-star {
+  position: relative;
+  .ss-star {
+    position: absolute;
+    left: 180px;
+    font-style: normal;
+  }
+}

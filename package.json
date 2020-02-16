@@ -1,0 +1,34 @@
+{
+  "name": "sciencesakura.github.io",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "lint:html": "htmlhint src/**/*.html",
+    "build:css": "node-sass -r -o css --output-style compressed src/scss",
+    "build:html": "html-minifier -o index.html -c .html-minifier.json src/index.html",
+    "build:js": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sciencesakura/sciencesakura.github.io.git"
+  },
+  "author": "sciencesakura",
+  "bugs": {
+    "url": "https://github.com/sciencesakura/sciencesakura.github.io/issues"
+  },
+  "homepage": "https://www.sciencesakura/com",
+  "devDependencies": {
+    "html-minifier": "^4.0.0",
+    "htmlhint": "^0.11.0",
+    "node-sass": "^4.13.1",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.27",
+    "@fortawesome/free-brands-svg-icons": "^5.12.1",
+    "@fortawesome/free-regular-svg-icons": "^5.12.1",
+    "@fortawesome/free-solid-svg-icons": "^5.12.1",
+    "bulma": "^0.8.0"
+  }
+}
