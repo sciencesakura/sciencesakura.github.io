@@ -5,7 +5,25 @@
 @import '../../node_modules/bulma/sass/grid/_all.sass';
 @import '../../node_modules/bulma/sass/layout/_all.sass';
 
-.ss-email {
+.ss-profile-icon {
+  @include mobile() {
+    display: none;
+  }
+}
+.ss-profile-name {
+  @include mobile() {
+    font-size: 1.5rem;
+  }
+}
+.ss-profile-description {
+  @include mobile() {
+    font-size: 0.75rem;
+  }
+}
+.ss-profile-email {
+  @include mobile() {
+    font-size: 0.75rem;
+  }
   > .icon {
     vertical-align: middle;
   }
@@ -15,17 +33,17 @@
     text-decoration: underline;
   }
 }
-.ss-contact > a {
+.ss-profile-contact > a {
   display: inline-block;
-  margin-right: 0.25em;
-  margin-left: 0.25em;
+  margin-right: 0.25rem;
+  margin-left: 0.25rem;
   color: #4a4a4a;
 }
 .ss-list-with-star {
   position: relative;
   .ss-star {
     position: absolute;
-    left: 180px;
+    left: 10.5rem;
     font-style: normal;
   }
 }
