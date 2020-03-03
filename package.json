@@ -5,7 +5,6 @@
   "scripts": {
     "lint:html": "htmlhint src/**/*.html",
     "build:css": "node-sass -r -o css --output-style compressed src/scss",
-    "build:html": "html-minifier -o index.html -c .html-minifier.json src/index.html",
     "build:js": "webpack --mode production"
   },
   "repository": {
@@ -18,7 +17,6 @@
   },
   "homepage": "https://www.sciencesakura/com",
   "devDependencies": {
-    "html-minifier": "^4.0.0",
     "htmlhint": "^0.11.0",
     "node-sass": "^4.13.1",
     "webpack": "^4.41.6",
