@@ -3,121 +3,335 @@
   <head>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>sciencesakura's profile</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.1/css/bulma.min.css" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="icon" href="image/favicon.ico" />
-    <script defer="defer" src="js/app.js"></script>
+    <script defer="defer" src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   </head>
   <body>
     <header class="section">
       <div class="container">
-        <div class="card">
-          <div class="card-content">
-            <div class="media">
-              <figure class="ss-profile-icon media-left image">
-                <img src="image/profile.png" alt="profile icon of sciencesakura" />
-              </figure>
-              <div class="media-content">
-                <h1 class="title ss-profile-name">sciencesakura</h1>
-                <p class="subtitle ss-profile-description">A software developer. Tokyo, Japan</p>
-                <p class="ss-profile-email"><span class="icon"><i class="far fa-envelope" title="mail address"></i></span><a href="mailto:sakurasakurascience@gmail.com">sakurasakurascience@gmail.com</a></p>
-                <p class="ss-profile-contact">
-                  <a href="https://sciencesakura.hatenablog.com/" title="website"><span class="icon"><i class="fas fa-link"></i></span></a>
-                  <a href="https://github.com/sciencesakura" title="GitHub"><span class="icon"><i class="fab fa-github"></i></span></a>
-                  <a href="https://twitter.com/sciencesakura" title="Twitter"><span class="icon"><i class="fab fa-twitter"></i></span></a>
-                </p>
-              </div>
-            </div>
+        <div class="media">
+          <figure class="media-left image is-64x64"><img src="image/profile.png" alt="" /></figure>
+          <div class="media-content">
+            <h1 class="title is-size-4-mobile">sciencesakura</h1>
+            <h2 class="subtitle is-size-6-mobile">A software developer</h2>
           </div>
+        </div>
+        <div class="content ss-header-content">
+          <p>
+            <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+            Tokyo, Japan
+          </p>
+          <p>
+            <span class="icon"><i class="far fa-envelope"></i></span>
+            <a href="mailto:sakurasakurascience@gmail.com" title="mail">sakurasakurascience@gmail.com</a>
+          </p>
+          <p>
+            <span class="icon"><i class="fas fa-link"></i></span>
+            <a href="https://sciencesakura.hatenablog.com/" title="blog">sciencesakura.hatenablog.com</a>
+          </p>
+          <p>
+            <span class="icon"><i class="fab fa-github"></i></span>
+            <a href="https://github.com/sciencesakura" title="GitHub">sciencesakura</a>
+          </p>
+          <p>
+            <span class="icon"><i class="fab fa-twitter"></i></span>
+            <a href="https://twitter.com/sciencesakura" title="Twitter">sciencesakura</a>
+          </p>
         </div>
       </div>
     </header>
     <section class="section">
       <div class="container">
-        <div class="card">
-          <header class="card-header">
-            <p class="card-header-title">スキルセット</p>
-          </header>
-          <div class="card-content">
-            <div class="content">
-              <div class="columns">
-                <div class="column">
-                  <p class="title is-6">言語</p>
-                  <div class="ss-list-with-star">
-                    <ul>
-                      <li>Java<i class="ss-star">★★★</i></li>
-                      <li>JavaScript<i class="ss-star">★★★</i></li>
-                      <li>Bash<i class="ss-star">★★☆</i></li>
-                      <li>Kotlin<i class="ss-star">★★☆</i></li>
-                      <li>TypeScript<i class="ss-star">★★☆</i></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="column">
-                  <p class="title is-6">F/W, Database</p>
-                  <div class="ss-list-with-star">
-                    <ul>
-                      <li>Spring Framework<i class="ss-star">★★☆</i></li>
-                      <li>jQuery<i class="ss-star">★★☆</i></li>
-                      <li>PostgreSQL<i class="ss-star">★★☆</i></li>
-                      <li>Oracle Database<i class="ss-star">★☆☆</i></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="column">
-                  <p class="title is-6">資格とか</p>
-                  <ul>
-                    <li>IPA 応用情報技術者</li>
-                    <li>IPA ネットワークスペシャリスト</li>
-                    <li>LPIC-1</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="columns">
-                <div class="column">
-                  <p class="title is-6">得意なこと</p>
-                  <ul>
-                    <li>チーム・メンバの技術サポート。</li>
-                    <li>ライブラリや開発ツールの選定と導入。特にテスト関係。</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+        <h1 class="title is-5 is-size-6-mobile">スキルセット</h1>
+        <div class="columns">
+          <div class="column is-one-third">
+            <table class="table is-fullwidth">
+              <caption class="has-text-weight-semibold">サーバOS</caption>
+              <tbody>
+                <tr>
+                  <td>RHEL</td>
+                  <td><i class="ss-star-2"></i></td>
+                </tr>
+                <tr>
+                  <td>Windows Server</td>
+                  <td><i class="ss-star-2"></i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="column is-one-third">
+            <table class="table is-fullwidth">
+              <caption class="has-text-weight-semibold">プログラミング言語</caption>
+              <tbody>
+                <tr>
+                  <td>Java</td>
+                  <td><i class="ss-star-3"></i></td>
+                </tr>
+                <tr>
+                  <td>JavaScript</td>
+                  <td><i class="ss-star-3"></i></td>
+                </tr>
+                <tr>
+                  <td>Groovy</td>
+                  <td><i class="ss-star-2"></i></td>
+                </tr>
+                <tr>
+                  <td>Kotlin</td>
+                  <td><i class="ss-star-2"></i></td>
+                </tr>
+                <tr>
+                  <td>TypeScript</td>
+                  <td><i class="ss-star-2"></i></td>
+                </tr>
+                <tr>
+                  <td>C</td>
+                  <td><i class="ss-star-1"></i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="column is-one-third">
+            <table class="table is-fullwidth">
+              <caption class="has-text-weight-semibold">フレームワーク／ライブラリ</caption>
+              <tbody>
+                <tr>
+                  <td>JUnit</td>
+                  <td><i class="ss-star-3"></i></td>
+                </tr>
+                <tr>
+                  <td>MyBatis</td>
+                  <td><i class="ss-star-3"></i></td>
+                </tr>
+                <tr>
+                  <td>jQuery</td>
+                  <td><i class="ss-star-2"></i></td>
+                </tr>
+                <tr>
+                  <td>Spring Framework</td>
+                  <td><i class="ss-star-2"></i></td>
+                </tr>
+                <tr>
+                  <td>JPA</td>
+                  <td><i class="ss-star-1"></i></td>
+                </tr>
+                <tr>
+                  <td>JSF</td>
+                  <td><i class="ss-star-1"></i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-one-third">
+            <table class="table is-fullwidth">
+              <caption class="has-text-weight-semibold">DBMS</caption>
+              <tbody>
+                <tr>
+                  <td>Oracle Database</td>
+                  <td><i class="ss-star-2"></i></td>
+                </tr>
+                <tr>
+                  <td>PostgreSQL</td>
+                  <td><i class="ss-star-2"></i></td>
+                </tr>
+                <tr>
+                  <td>SQL Server</td>
+                  <td><i class="ss-star-1"></i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="column is-one-third">
+            <table class="table is-fullwidth">
+              <caption class="has-text-weight-semibold">資格</caption>
+              <tbody>
+                <tr>
+                  <td>IPA 応用情報技術者</td>
+                </tr>
+                <tr>
+                  <td>IPA ネットワークスペシャリスト</td>
+                </tr>
+                <tr>
+                  <td>LPIC-1</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="column is-one-third">
+            <table class="table is-fullwidth">
+              <caption class="has-text-weight-semibold">得意</caption>
+              <tbody>
+                <tr>
+                  <td>メンバの技術サポート</td>
+                  <tr>
+                    <td>ライブラリ／ツールの選定と導入</td>
+                  </tr>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
     </section>
     <section class="section">
       <div class="container">
-        <div class="card">
-          <header class="card-header">
-            <p class="card-header-title">経歴</p>
-          </header>
-          <div class="card-content">
-            <div class="content">
-              <ul>
-                <li>2012-04〜2019-11 都内SES企業に所属。製造業へのERPパッケージ導入案件、大手総合商社の営業支援システム改修案件、小売電力事業者への料金計算システム導入案件などに従事。</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        <h1 class="title is-5 is-size-6-mobile">経歴</h1>
+        <table class="table is-fullwidth">
+          <tbody>
+            <tr>
+              <td>2012-06〜2013-03</td>
+              <td>機械メーカー 経費精算システム導入案件
+                <div class="tags">
+                  <span class="tag">Windows Server</span>
+                  <span class="tag">Java</span>
+                  <span class="tag">intra-mart</span>
+                  <span class="tag">iBatis</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">SQL Server</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>2013-04〜2013-12</td>
+              <td>化学メーカー 購買管理システム導入案件
+                <div class="tags">
+                  <span class="tag">Windows Server</span>
+                  <span class="tag">Java</span>
+                  <span class="tag">intra-mart</span>
+                  <span class="tag">MyBatis</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">jQuery</span>
+                  <span class="tag">Oracle Database</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>2014-01〜2014-03</td>
+              <td>エンジニアリング業 文書管理システム導入案件
+                <div class="tags">
+                  <span class="tag">RHEL</span>
+                  <span class="tag">Java</span>
+                  <span class="tag">Spring Framework</span>
+                  <span class="tag">MyBatis</span>
+                  <span class="tag">Oracle Database</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>2014-04〜2015-04</td>
+              <td>商社 通関業務システム改修案件
+                <div class="tags">
+                  <span class="tag">Hyper-V</span>
+                  <span class="tag">Windows Server</span>
+                  <span class="tag">Java</span>
+                  <span class="tag">Tomcat</span>
+                  <span class="tag">Struts</span>
+                  <span class="tag">SQL Server</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>2015-05〜2016-03</td>
+              <td>食品メーカー 営業支援システム改修案件
+                <div class="tags">
+                  <span class="tag">Windows Server</span>
+                  <span class="tag">Java</span>
+                  <span class="tag">intra-mart</span>
+                  <span class="tag">MyBatis</span>
+                  <span class="tag">Oracle Database</span>
+                  <span class="tag">PL/SQL</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>2016-04〜2017-12</td>
+              <td>商社 営業取引システム改修案件
+                <div class="tags">
+                  <span class="tag">RHEL</span>
+                  <span class="tag">Java</span>
+                  <span class="tag">WebLogic</span>
+                  <span class="tag">Seasar2</span>
+                  <span class="tag">JSF</span>
+                  <span class="tag">JPA</span>
+                  <span class="tag">Oracle Database</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>2018-01〜2018-10</td>
+              <td>小売電気事業者 料金計算システム導入案件
+                <div class="tags">
+                  <span class="tag">Windows Server</span>
+                  <span class="tag">Java</span>
+                  <span class="tag">PostgreSQL</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>2019-06〜2019-08</td>
+              <td>商社 通関業務システム改修案件
+                <div class="tags">
+                  <span class="tag">RHEL</span>
+                  <span class="tag">Java</span>
+                  <span class="tag">Spring Framework</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">jQuery</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>2019-09〜2019-11</td>
+              <td>金融業 自動音声案内システム導入案件
+                <div class="tags">
+                  <span class="tag">RHEL</span>
+                  <span class="tag">Java</span>
+                  <span class="tag">Tomcat</span>
+                  <span class="tag">Spring Framework</span>
+                  <span class="tag">DBFlute</span>
+                  <span class="tag">PostgreSQL</span>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
     <section class="section">
       <div class="container">
-        <div class="card">
-          <header class="card-header">
-            <p class="card-header-title">作ったもの</p>
-          </header>
-          <div class="card-content">
-            <div class="content">
-              <ul>
-                <li><a href="https://github.com/sciencesakura/dbsetup-spreadsheet">dbsetup-spreadsheet</a> : Excelファイルをテストデータとして読み込めるdbsetup拡張</li>
-                <li><a href="https://github.com/sciencesakura/dbsetup-csv">dbsetup-csv</a> : CSVファイルをテストデータとして読み込めるdbsetup拡張</li>
-                <li><a href="https://github.com/sciencesakura/gentzen-seqcalc">gentzen-seqcalc</a> : Gentzenのシークエント計算による自動証明器</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        <h1 class="title is-5 is-size-6-mobile">作ったもの</h1>
+        <table class="table is-fullwidth">
+          <tbody>
+            <tr>
+              <td><a href="https://github.com/sciencesakura/dbsetup-spreadsheet">dbsetup-spreadsheet</a></td>
+              <td>ExcelからDBへデータ投入が出来るテスト補助ツール
+                <div class="tags">
+                  <span class="tag">Java</span>
+                  <span class="tag">dbsetup</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><a href="https://github.com/sciencesakura/dbsetup-csv">dbsetup-csv</a></td>
+              <td>CSVからDBへデータ投入が出来るテスト補助ツール
+                <div class="tags">
+                  <span class="tag">Java</span>
+                  <span class="tag">dbsetup</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><a href="https://github.com/sciencesakura/gentzen-seqcalc">gentzen-seqcalc</a></td>
+              <td>Gentzenのシークエント計算による自動証明器
+                <div class="tags">
+                  <span class="tag">TypeScript</span>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
   </body>

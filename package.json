@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "main": "index.html",
   "scripts": {
-    "lint:html": "htmlhint src/**/*.html",
-    "build:css": "node-sass -r -o css --output-style compressed src/scss",
-    "build:js": "webpack --mode production"
+    "lint:html": "htmlhint src/**/*.html"
   },
   "repository": {
     "type": "git",
@@ -17,16 +15,7 @@
   },
   "homepage": "https://www.sciencesakura/com",
   "devDependencies": {
-    "htmlhint": "^0.11.0",
-    "node-sass": "^4.13.1",
-    "webpack": "^4.41.6",
-    "webpack-cli": "^3.3.11"
+    "htmlhint": "^0.11.0"
   },
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.27",
-    "@fortawesome/free-brands-svg-icons": "^5.12.1",
-    "@fortawesome/free-regular-svg-icons": "^5.12.1",
-    "@fortawesome/free-solid-svg-icons": "^5.12.1",
-    "bulma": "^0.8.0"
-  }
+  "dependencies": {}
 }
