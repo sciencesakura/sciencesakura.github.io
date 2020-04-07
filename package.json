@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.html",
   "scripts": {
-    "lint:html": "htmlhint src/**/*.html"
+    "lint:html": "htmlhint index.html"
   },
   "repository": {
     "type": "git",
