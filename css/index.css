@@ -12,6 +12,9 @@ p .icon {
 .ss-header-content p {
   margin-bottom: 0 !important;
 }
+.ss-table tr > td:first-child {
+  width: 70%;
+}
 .ss-star-1::after {
   content: "★☆☆";
   font-style: normal;
