@@ -1,7 +1,7 @@
 {
   "name": "sciencesakura.github.io",
   "version": "1.0.0",
-  "main": "index.html",
+  "private": true,
   "scripts": {
     "lint:html": "htmlhint index.html",
     "build:js": "webpack --mode production"
