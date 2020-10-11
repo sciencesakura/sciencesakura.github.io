@@ -1,0 +1,45 @@
+@import "bulma/bulma";
+
+.icon {
+  vertical-align: middle;
+}
+
+.content {
+  @include mobile {
+    font-size: 0.75rem;
+  }
+}
+
+.s-profile {
+  $icon-size-mobile: 64px;
+  $icon-size-tablet: 128px;
+
+  &-icon {
+    @include mobile {
+      height: $icon-size-mobile;
+      width: $icon-size-mobile;
+    }
+    @include tablet {
+      height: $icon-size-tablet;
+      width: $icon-size-tablet;
+    }
+  }
+
+  &-name {
+    @include mobile {
+      margin-bottom: 5px;
+    }
+    @include tablet {
+      margin-bottom: 10px;
+    }
+  }
+
+  &-contact {
+    a {
+      color: $text;
+    }
+    a:hover {
+      color: $text-light;
+    }
+  }
+}
