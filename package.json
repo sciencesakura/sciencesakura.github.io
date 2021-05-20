@@ -4,27 +4,30 @@
   "private": true,
   "scripts": {
     "clean": "rm -rf css js",
-    "format": "prettier --print-width 120 --write src",
+    "format": "prettier --write src",
     "lint:html": "htmlhint index.html",
     "lint:css": "stylelint --fix src/**/*.scss",
-    "build:css": "sass -I node_modules -s compressed --no-source-map src:css",
-    "build:js": "webpack --mode production",
-    "start": "webpack-dev-server"
+    "check": "run-s format lint:*",
+    "compile:css": "sass -I node_modules -s compressed --no-source-map src:css",
+    "compile:js": "webpack --mode production",
+    "build": "run-s check compile:*",
+    "start": "webpack serve --mode development"
   },
   "author": "sciencesakura",
   "homepage": "https://www.sciencesakura.com",
   "devDependencies": {
-    "htmlhint": "^0.14.1",
-    "prettier": "^2.1.2",
-    "sass": "^1.27.0",
-    "stylelint": "^13.7.2",
+    "htmlhint": "^0.14.2",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.3.0",
+    "sass": "^1.32.13",
+    "stylelint": "^13.13.1",
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-recommended-scss": "^4.2.0",
-    "stylelint-config-standard": "^20.0.0",
-    "stylelint-scss": "^3.18.0",
-    "webpack": "^4.44.2",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-scss": "^3.19.0",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
